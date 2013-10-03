@@ -91,6 +91,8 @@ u {
   overflow: hidden;
   font-size: 0;
   color: transparent; }
+  
+  span.tsrc {font-size:20px !important; margin:0 auto; display:block; width:100%;}
 
 @media (min-width: 992px) {
   .number-figure-huge {
