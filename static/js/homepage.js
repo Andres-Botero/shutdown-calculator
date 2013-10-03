@@ -1,7 +1,7 @@
 (function loadHomepageJS(){
-    if (!window.location.href.match(/\/$/)) {
+    /*if (!window.location.href.match(/\/$/)) {
         window.location = '/';
-    }
+    }*/
 
     var template = _.template($('#banner-template').html());
 
@@ -39,11 +39,13 @@
             minutes = Math.floor((timeDiff % HOURS) / MINUTES),
             seconds = Math.floor((timeDiff % MINUTES) / SECONDS);
         var cost = timeDiff / HOURS * 12500000;
+		var cost2 = timeDiff / HOURS * 3333333;
         var vals = {days: days,
                     hours: hours,
                     minutes: minutes,
                     seconds: seconds,
                     cost: numberFormat(cost),
+					cost2: numberFormat(cost2),
 
                     // Pluralizations
                     days_pluralize: days === 1 ? '' : 's',
