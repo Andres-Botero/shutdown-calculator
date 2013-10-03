@@ -57,9 +57,11 @@
   <!-- AddThis Button END -->
   <p class='centered logo-wrapper'><a href='http://outline.com/' target='_blank'><span class='logo'>Outline</span> <br>
     Manage Your Stake in Government</a></p>
-  <p class='centered last-paragraph'><iframe src="http://ghbtns.com/github-btn.html?user=OutlineUSA&repo=shutdown-calculator&type=fork"
+  <p class='centered last-paragraph'><iframe src="http://ghbtns.com/github-btn.html?user=Andres-Botero&repo=shutdown-calculator&type=fork"
     allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe></p>
-  <p class='centered greyed last-paragraph'><small><a href='http://www.nbcnews.com/business/money-nothing-government-shutdown-costs-12-5-million-hour-8C11308802' target='_blank'>Sources</a></small></p>
+  <p class='centered greyed last-paragraph'><small><a href='http://www.nbcnews.com/business/money-nothing-government-shutdown-costs-12-5-million-hour-8C11308802' target='_blank'>NBC news</a></small></p>	
+  <p class='centered greyed last-paragraph'><small><a href='http://abcnews.go.com/blogs/politics/2013/10/shutdown-could-cost-300-million-a-day/' target='_blank'>ABC news</a></small></p>
+  <p class='centered greyed last-paragraph'><small><a href='http://money.msn.com/investing/shutdown-cost-dollar40-million-dollar80-million-a-day' target='_blank'>MSN Money</a></small></p>
 <script type='text/template' id='banner-template'>
   <h1 class='centered'>The U.S. Federal Government has been shut down for 
     <u class='number-figure'><%= days %></u> day<%= days_pluralize %>,
@@ -67,24 +69,32 @@
     <u class='number-figure'><%= minutes %></u> minute<%= minutes_pluralize %>,
     <u class='number-figure'><%= seconds %></u> second<%= seconds_pluralize %> </h1>
   <h1 class='centered'>and so far it has cost <br>
-    <u class='number-figure number-figure-huge'><%= cost %></u></h1>
+    <u class='number-figure number-figure-huge'><%= cost %></u> </h1>
+	<span  class="tsrc centered"> (according to <a target="_blank" src="http://abcnews.go.com/blogs/politics/2013/10/shutdown-could-cost-300-million-a-day/">ABC news</a> and <a target="_blank" src="http://www.cnbc.com/id/101078145">NBC news</a>) </span><br>
+	<h1 class='centered'><u class='number-figure number-figure-huge'><%= cost2 %></u> </h1>
+	<span  class="tsrc centered"> (according to <a target="_blank" src="http://money.msn.com/investing/shutdown-cost-dollar40-million-dollar80-million-a-day">MSN Money</a>) </span>
 </script>
-<script src='/static/js/modernizr.min.js'></script>
+<script src='./static/js/modernizr.min.js'></script>
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src='/static/js/underscore.min.js'></script>
-<script src='/static/js/underscore.string.js'></script>
-<script src='/static/js/homepage.js'></script>
+<script src='./static/js/underscore.min.js'></script>
+<script src='./static/js/underscore.string.js'></script>
+<script src='./static/js/homepage.js'></script>
 <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
 <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-524c796c5edd34f7"></script>
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-38713302-5', 'outline.com');
-  ga('send', 'pageview');
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8543655-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
 
 </script>
 
